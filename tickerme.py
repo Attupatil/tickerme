@@ -32,7 +32,7 @@ else:
             to_date = st.date_input("To Date", datetime.date.today())
             segment = st.selectbox("Select Segment", ["Cash", "FnO"])
 
-        req_date = None if req_date >= datetime.date.today() else req_date
+        
 
         
             
