@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+streamlit = "*"
+matplotlib = "*"
+yfinance = "*"
+yahoo-fin = "*"
+mplfinance = "*"
+plotly = "*"
+pillow = "*"
+pynse = {git = "https://github.com/StreamAlpha/pynse.git"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
