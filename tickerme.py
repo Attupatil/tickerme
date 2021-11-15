@@ -27,7 +27,7 @@ else:
     def bhavcopy_display():
 
         with st.sidebar:
-            st.write("Bhavcopy Inputs")
+            st.write("Voume Inputs")
             req_date = st.date_input("Select Date", datetime.date.today())
             segment = st.selectbox("Select Segment", ["Cash", "FnO"])
 
@@ -41,7 +41,7 @@ else:
         st.write(f"{segment} bhavcopy for {req_date}")
 
         st.download_button(
-            "Download", bhavcopy.to_csv(), file_name=f"{segment}_bhav_{req_date}.csv"
+            "Download", bhavcopy.to_csv(), file_name=f"{segment}_Vol_{req_date}.csv"
         )
         st.write(bhavcopy)
 
@@ -540,7 +540,7 @@ else:
         st.write(ax.get_figure())
 
     analysis_dict = {
-        "Bhavcopy": bhavcopy_display,
+        "Volume": bhavcopy_display,
         "Stock Delivery Data": stock_deliv_data,
         # __________________
         "Crypto": crypto_display, 
