@@ -31,10 +31,6 @@ else:
 
             to_date = st.date_input("To Date", datetime.date.today())
             segment = st.selectbox("Select Segment", ["Cash", "FnO"])
-
-        
-
-        
             
         st.write(f"To be updated soon, until then try using crypto ")
 
