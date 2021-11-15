@@ -27,7 +27,7 @@ else:
     def bhavcopy_display():
 
         with st.sidebar:
-            st.write("Voume Inputs")
+            st.write("Bhavcopy Inputs")
             req_date = st.date_input("Select Date", datetime.date.today())
             segment = st.selectbox("Select Segment", ["Cash", "FnO"])
 
